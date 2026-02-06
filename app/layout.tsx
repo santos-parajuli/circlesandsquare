@@ -2,6 +2,7 @@ import './globals.css';
 
 import { Figtree, Geist, Geist_Mono } from 'next/font/google';
 
+import Footer from '@/components/shared/footer';
 import type { Metadata } from 'next';
 import Navbar from '@/components/shared/navbar';
 
@@ -92,6 +93,7 @@ export default function RootLayout({
 			<body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
 				<Navbar />
 				{children}
+				<Footer />
 			</body>
 		</html>
 	);

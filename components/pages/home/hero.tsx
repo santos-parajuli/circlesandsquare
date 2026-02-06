@@ -51,7 +51,6 @@ const HeroSection = ({ menudata }: { menudata: MenuData[] }) => {
 
 		thumbApi.on('select', () => {
 			const selectedIndex = thumbApi.selectedScrollSnap();
-
 			setCurrent(selectedIndex);
 
 			// Sync main and comments carousel with thumbnail carousel
@@ -86,7 +85,7 @@ const HeroSection = ({ menudata }: { menudata: MenuData[] }) => {
 	const plugin = useRef(Autoplay({ delay: 3000, stopOnInteraction: false }));
 
 	return (
-		<section className='flex-1 py-12 sm:py-16 lg:py-24'>
+		<section className='flex-1 py-12 sm:py-16 lg:py-24 '>
 			<div className='mx-auto flex h-full max-w-7xl flex-col gap-16 px-4 sm:px-6 lg:px-8'>
 				{/* Hero Header */}
 				<div className='grid grid-cols-1 gap-6 gap-y-12 md:gap-y-16 lg:grid-cols-5'>
@@ -103,12 +102,12 @@ const HeroSection = ({ menudata }: { menudata: MenuData[] }) => {
 								size='lg'
 								className='group relative w-fit overflow-hidden rounded-full text-base before:absolute before:inset-0 before:rounded-[inherit] before:bg-[linear-gradient(45deg,transparent_25%,rgba(255,255,255,0.5)_50%,transparent_75%,transparent_100%)] before:bg-size-[250%_250%,100%_100%] before:bg-position-[200%_0,0_0] before:bg-no-repeat before:transition-[background-position_0s_ease] before:duration-1000 hover:before:bg-position-[-100%_0,0_0] has-[>svg]:px-6 dark:before:bg-[linear-gradient(45deg,transparent_25%,rgba(0,0,0,0.2)_50%,transparent_75%,transparent_100%)]'>
 								<a href='#'>
-									Order now
+									View Menu
 									<ArrowRightIcon className='transition-transform duration-200 group-hover:translate-x-0.5' />
 								</a>
 							</Button>
-							<Button size='lg' asChild className='bg-primary/10 hover:bg-primary/20 text-primary rounded-full text-base'>
-								<a href='#'>Book table</a>
+							<Button size='lg' className='bg-primary/10 hover:bg-primary/30 px-5 text-primary rounded-full text-base'>
+								<a href='#'>Find a Location</a>
 							</Button>
 						</div>
 					</div>

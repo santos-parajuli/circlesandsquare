@@ -19,7 +19,11 @@ const EmbedSocialHashtag: React.FC = () => {
 		};
 	}, []);
 
-	return <div className='embedsocial-hashtag bg-sidebar-primary-foreground pb-4 py-4 overflow-hidden' data-ref='c1490608c23c7b0d8a7e281d1547980ff699e957' data-lazyload='yes' />;
+	return (
+		<div className='bg-sidebar-primary-foreground pr-8 pl-4 py-8  overflow-hidden'>
+			<div className='embedsocial-hashtag ' data-ref='c1490608c23c7b0d8a7e281d1547980ff699e957' data-lazyload='yes' />
+		</div>
+	);
 };
 
 export default EmbedSocialHashtag;
