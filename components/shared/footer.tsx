@@ -97,6 +97,7 @@ function Footer() {
 					<a href='https://siwani.com.np/' target='_blank'>
 						<span className='italic'>Santosh Parajuli</span>
 					</a>
+					<p>Disclaimer: This website is a design mock-up created for demonstration purposes only. It is not intended for commercial use and does not represent an official business website.</p>
 				</div>
 			</div>
 		</footer>
